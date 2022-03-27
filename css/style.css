@@ -143,6 +143,11 @@ button {
     background-color: #dfbbfb;
 }
 
+@font-face {
+  font-family: LapsusPro-Bold;
+  src: url("/static/fonts/LapsusPro-Bold.otf") format("opentype");
+}
+
 #grassFooter {
     position: absolute;
     width: auto;
