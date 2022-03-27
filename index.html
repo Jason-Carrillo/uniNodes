@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="https://cdn.skypack.dev/lottie-web"></script>
 
 <!--    <script type="text/javascript" src="js/tailwind.config.js"></script>-->
     <script src="js/lottie.js"></script>
@@ -40,6 +41,8 @@
         </div>
         <div id="moonToggle" class="shiftToggle moonToggle dark">
         </div>
+
+
 
         <input type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="label">
@@ -86,7 +89,6 @@
 
     <!--Hero-->
     <div class="flex justify-center mx-auto my-auto flex-wrap">
-
         <img src="Images/UnicornLogo.png" id="uniLogo" class="hidden lg:block">
         <img src="Images/UnicornLogo.png" id="uniLogoSm" class="sm:block lg:hidden">
 
@@ -117,7 +119,8 @@
     <section class="py-8 bg-white flex items-center">
 
       <div class="mx-auto flex flex-wrap pt-4 m-0">
-        <img src="Images/roadmap_black.svg" class="roadMapTitle mx-auto pb-1">
+        <img src="Images/roadmap_black.svg" class="roadmapTitle mx-auto pb-1">
+        <img src="Images/roadmap_white.svg" class="roadmapDark mx-auto pb-1 dark bg-black">
 
         <img src="Images/roadmap.png" class="roadmap mx-auto">
 
@@ -126,10 +129,11 @@
 
 <hr>
 
-    <section class="bg-transparent-500 py-8">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 bigTitle">
-        NODES
-      </h1>
+    <section class="bg-transparent-500 py-8 bg-white">
+
+      <img src="Images/nodes_black.svg" class="titleNodes mx-auto">
+      <img src="Images/nodes_white.svg" class="nodesDark mx-auto dark bg-black">
+
       <div class="flex inline justify-center mx-auto container flex-wrap">
 
         <div class="nodeBlock">
@@ -150,9 +154,10 @@
 
     <section class="py-8">
       <div class="container mx-auto flex flex-wrap pt-4">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 bigTitle">
-          Meet the team
-        </h1>
+
+        <img src="Images/meet_the_team_black.svg" class="titleMeet mx-auto">
+        <img src="Images/meet_the_team_white.svg" class="meetDark mx-auto dark">
+
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
@@ -378,6 +383,15 @@
 
     document.querySelector(".shiftToggle").classList.toggle("dark");
     document.querySelector(".moonToggle").classList.toggle("dark");
+
+    document.querySelector(".roadmapTitle").classList.toggle("dark");
+    document.querySelector(".roadmapDark").classList.toggle("dark");
+
+    document.querySelector(".titleNodes").classList.toggle("dark");
+    document.querySelector(".nodesDark").classList.toggle("dark");
+
+    document.querySelector(".titleMeet").classList.toggle("dark");
+    document.querySelector(".meetDark").classList.toggle("dark");
 
   })
 

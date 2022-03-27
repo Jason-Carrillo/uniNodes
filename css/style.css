@@ -4,7 +4,6 @@
     height: 30em;
 }
 
-
 #uniLogoSm {
     position: absolute;
     top: 5em;
@@ -76,8 +75,60 @@ body {
     display: inline-block;
 }
 
-.roadMapTitle {
+.titleImg {
     width: 30%;
+}
+
+.titleImg.dark {
+  display: none;
+}
+
+.roadmapTitle  {
+     width: 23%;
+}
+
+.roadmapTitle.dark {
+  display: none;
+}
+
+.roadmapDark  {
+     width: 23%;
+}
+
+.roadmapDark.dark {
+  display: none;
+}
+
+.titleNodes  {
+     width: 23%;
+}
+
+.titleNodes.dark  {
+     display: none;
+}
+
+.nodesDark  {
+     width: 23%;
+}
+
+.nodesDark.dark {
+  display: none;
+}
+
+.titleMeet  {
+   width: 50%;
+}
+
+.titleMeet.dark  {
+   display: none;
+}
+
+.meetDark {
+   width: 50%;
+}
+
+.meetDark.dark {
+  display: none;
 }
 
 body.dark {
